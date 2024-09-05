@@ -1,0 +1,24 @@
+name: My Workflow
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Java_install.yml
+        run: |
+          echo "Running Java_install.yml"
+          
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run maven-publish.yml
+        run: |
+          echo "Running maven-publish.yml"
+          
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run maven.yml
+        run: |
+          echo "Running maven.yml"
